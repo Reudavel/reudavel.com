@@ -1,0 +1,68 @@
+/* nav */
+/* nest its OK, afects all the elements that share class the inside parent even if they are not direct descendent*/
+/* we can use: > .class {} to affects only the fisrt direct child of the parent*/
+/* the parent selector & replaces the text of the .parent inside the style block great fot theming*/
+
+/* CSS hamburger button code, h/t 
+https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793 
+
+Below is a starting navigation bar formatted for mobile and desktop. MQ is set to break where nav wraps once we've set up some typography... which we have not done yet. Trust the process :-)
+
+ <a href="#main-menu-toggle" class="backdrop" tabindex="-1" hidden></a> //to make clickable the hole screen 
+*/
+
+.nav-container{
+  $fontColor: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 10;
+  .nav { 
+    margin: 0 auto;
+    max-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      align-self: flex-start;
+      height: 70px;
+      width: 150px;
+    }
+    .nav-list {
+     
+      display: flex;
+      margin-right: 2rem;
+      a {
+        color: $fontColor;
+        display: block;
+        font-size: 2.2rem;
+        padding: 2rem;
+      }
+       a:hover {
+        background: var(--main-blue);
+      }
+    }
+  }
+}
+
+  
+  @media (max-width: 485px){
+    .nav{
+      display: none;
+    }
+  }
+  
+  @media (max-width: 28.75em) {
+    .nav {
+      justify-content: center;
+      .logo{
+        justify-self: start;
+      }
+    }
+  
+    .nav-list {
+      margin: 0 1rem;
+    }
+  }
+  
