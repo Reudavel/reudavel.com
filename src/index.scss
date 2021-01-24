@@ -1,14 +1,5 @@
-/*Recomend use BEM Block, Element, Modifier 
-(Layout, Section, Section-Component, Component__Variable)
-LSCV
-
-the order is important
-
-maybe need to change for  @use instead of import
-*/
-
-@import "./styles/Utils/base.scss";
-@import "./styles/Utils/mediaquerys.scss";
+@import "./styles/Utils/_base.scss";
+@import "./styles/Utils/_mediaquerys.scss";
 
 @import "./styles/Components/button.scss";
 

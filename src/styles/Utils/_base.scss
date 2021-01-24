@@ -1,0 +1,78 @@
+@import "./themes";
+
+:root {// root means global varaibles (html tag)
+    --main-white: #f0f0f0;//CSS variables syntax
+    --main-red: #81bdbd;
+    --main-blue: #586279;
+    --main-gray: #7d8c9e;
+  }
+  
+  /* Base reset */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  /*Con esta regla le decimos a todos los elemento que sean border-box  
+  incluyendo lo que esta los elementos en lgares de before and after muy bueno para temas y componentes*/
+  *,  *::before,  *::after {
+    box-sizing: inherit; 
+  }
+
+  html {
+    box-sizing: border-box; /*Aqui indicamos que tenemos que incluir el borde en el tamaño de la caja model-box*/
+  
+    /* Set font size for easy rem calculations in this proyect 1rem = 10px
+     * default document font size = 16px, 1rem = 16px, 100% = 16px
+     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth; /*Scroll suavecito :3 */
+  }
+
+
+  /* Base styles */
+  body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem; /* 18px */
+    font-weight: 400;
+    line-height: 1.4;
+    color: map-get($map: $defaultTheme, $key:"font-color" );
+    //margin: 0px;
+    /*
+    to the main {
+      width: 90%;
+      margin: 0 auto;
+    }
+    **/
+  }
+  
+  h1,
+  h2 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 6rem;
+  }
+  
+  h2 {
+    font-size: 4.2rem;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $fontColorDefaultTheme;
+  }
+  
+  img {
+    display: block;
+    width: 100%;
+  }

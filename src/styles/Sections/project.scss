@@ -2,7 +2,7 @@
   
   .projects-section {
     text-align: center;
-    padding: 10rem 2rem;
+    padding-top: 10rem;
     background:  white;
   }
   
@@ -46,12 +46,12 @@
   }
   
   .code {
-    color: var(--main-gray);
+    color: transparent;
     transition: color 0.3s ease-out;
   }
   
   .project:hover .code {
-    color: #ff7f50;
+    color: #ffffff;
   }
   
   .project-image {
@@ -61,6 +61,8 @@
   }
   
   .project-title {
+    color: white;
+    background-color: black;
     font-size: 2rem;
     padding: 2rem 0.5rem;
   }
