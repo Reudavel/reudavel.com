@@ -1,5 +1,17 @@
 @import "./colors";
 
+$themes: (
+    "defaultTheme": (
+        font-color: $fontColorDefaultTheme,
+        primary: $primary,
+    ),
+
+    "darkTheme": (
+        primary: $primary,
+    )
+);
+
+
 $defaultTheme: (
 "font-color": $fontColorDefaultTheme,
 "primary": $primary,
@@ -7,4 +19,4 @@ $defaultTheme: (
 
 $darkTheme: (
     "primary": $primary,
-)
+);

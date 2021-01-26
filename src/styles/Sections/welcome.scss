@@ -1,11 +1,18 @@
 /* Welcome section */
   
 .welcome-section {
-  color: white;
+  h1{
+    font-size: 10vw;
+  }
+  pre{
+    font-size: 2vw;
+  }
+    color: white;
+    
     background-image: linear-gradient(115deg,
     rgba(53, 51, 51, 0.6),
     rgba(70, 70, 70, 0.4)
-  ), url("./assets/Generic-Hero.jpg");
+    ), url("./assets/Generic-Hero.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,10 +27,16 @@
     //background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
   
     p {
-      font-size: 3rem;
+      font-size: 4vw;
       font-weight: 200;
       font-style: italic;
       color: var(--main-red);
+    }
+  }
+
+  @media (max-width: 600px){
+    .welcome-section {
+      font-size: 2rem;
     }
   }
   

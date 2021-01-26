@@ -25,14 +25,17 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
     display: flex;
     justify-content: space-between;
     .logo {
+      width: auto; //Set one of the propeties to auto and the other to 100% to preserve ratio
+      height: 70px ;
       align-self: flex-start;
-      height: 70px;
-      width: 150px;
     }
     .nav-list {
-     
       display: flex;
       margin-right: 2rem;
+
+      a.current {
+        background: rgb(255, 187, 0);
+      }
       a {
         color: $fontColor;
         display: block;
@@ -40,16 +43,22 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
         padding: 2rem;
       }
        a:hover {
-        background: var(--main-blue);
+        background: rgba(255, 187, 0, 0.616);
       }
     }
   }
 }
 
   
-  @media (max-width: 485px){
-    .nav{
-      display: none;
+  @media (max-width: 600px){
+    .nav-container{
+      
+      .nav{
+        flex-direction: column;
+        .nav-list {
+          flex-direction: column;
+        }
+      }    
     }
   }
   

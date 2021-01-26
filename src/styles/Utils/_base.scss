@@ -1,19 +1,12 @@
 @import "./themes";
+@import "./typography";
 
-:root {// root means global varaibles (html tag)
-    --main-white: #f0f0f0;//CSS variables syntax
-    --main-red: #81bdbd;
-    --main-blue: #586279;
-    --main-gray: #7d8c9e;
-  }
-  
   /* Base reset */
   * {
     margin: 0;
     padding: 0;
   }
   
-
   /*Con esta regla le decimos a todos los elemento que sean border-box  
   incluyendo lo que esta los elementos en lgares de before and after muy bueno para temas y componentes*/
   *,  *::before,  *::after {
@@ -48,20 +41,7 @@
     **/
   }
   
-  h1,
-  h2 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    text-align: center;
-  }
   
-  h1 {
-    font-size: 6rem;
-  }
-  
-  h2 {
-    font-size: 4.2rem;
-  }
   
   ul {
     list-style: none;

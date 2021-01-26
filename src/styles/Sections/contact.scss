@@ -1,6 +1,7 @@
   /* Contact section */
   
   .contact-section {
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,7 +38,7 @@
   
   .contact-details {
     font-size: 2.4rem;
-    text-shadow: 2px 2px 1px #1f1f1f;
+    text-shadow: 1px 0px 1px #1f1f1f;
     transition: transform 0.3s ease-out;
   }
   
