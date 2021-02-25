@@ -34,7 +34,7 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
       margin-right: 2rem;
 
       a.current {
-        background: rgb(255, 187, 0);
+        background:  map-get($map: $defaultTheme, $key:"secondary" ); //rgb a =  0.822
       }
       a {
         color: $fontColor;
@@ -43,7 +43,7 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
         padding: 2rem;
       }
        a:hover {
-        background: rgba(255, 187, 0, 0.616);
+        background: map-get($map: $defaultTheme, $key:"secondary" );
       }
     }
   }

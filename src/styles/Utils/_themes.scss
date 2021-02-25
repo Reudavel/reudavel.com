@@ -1,5 +1,3 @@
-@import "./colors";
-
 $themes: (
     "defaultTheme": (
         font-color: $fontColorDefaultTheme,
@@ -13,10 +11,11 @@ $themes: (
 
 
 $defaultTheme: (
-"font-color": $fontColorDefaultTheme,
-"primary": $primary,
+    "font-color": $fontColorDefaultTheme,
+    "primary": $primary,
+    "secondary": $nav-link-bg
 );
 
 $darkTheme: (
     "primary": $primary,
-);
+); 
