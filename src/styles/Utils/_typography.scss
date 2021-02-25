@@ -26,3 +26,10 @@ Text recomndations
     avoid windows and orphans
     text center and a little upper 
 */
+
+// body {
+//     --minFontSize: 32px;
+//   --maxFontSize: 200px;
+//   --scaler: 10vw;
+//   font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+// }
