@@ -12,7 +12,7 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
 */
 
 .nav-container{
-  $fontColor: #ffffff;
+  $fontColor: map-get($map: $defaultTheme, $key:"nav-font-color" );
   position: fixed;
   top: 0;
   left: 0;
