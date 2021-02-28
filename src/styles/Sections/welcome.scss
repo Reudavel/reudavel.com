@@ -1,46 +1,37 @@
 /* Welcome section */
   
 .welcome-section {
-  h1{
-    --minFontSize: 32px;
-  --maxFontSize: 100px;
-  --scaler: 10vw;
-  font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
-  }
-  pre{
-    font-size: 2vw;
-  }
-    color: white;
-    
+  color: white;
+  .hero-image{
     background-image: linear-gradient(115deg,
     rgba(53, 51, 51, 0.6),
     rgba(70, 70, 70, 0.4)
     ), url("./assets/Generic-Hero.jpg");
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    //width: 90%; margin: 0 auto;
-    height: 100vh;
-    //background-color: #000;
-    //background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-  
-    p {
-      font-size: 4vw;
-      font-weight: 200;
-      font-style: italic;
-      color: var(--main-red);
+    position: relative;
+      .hero-text {
+        text-align: left;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);   
+        width: 90%;
+          h1{
+            --minFontSize: 2rem;
+            --maxFontSize: 8rem;
+            --scaler: 10vw;
+            font-size: clamp( var(--minFontSize), var(--scaler), var(--maxFontSize) );
+          }
+          p {
+            font-size: 3vw;       
+            font-style: italic;          
+          }
+          pre{
+            font-size: 1.5vw;
+          }          
+      }
     }
   }
-
-  @media (max-width: 600px){
-    .welcome-section {
-      font-size: 2rem;
-    }
-  }
-  
-  
