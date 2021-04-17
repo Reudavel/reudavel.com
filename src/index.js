@@ -30,3 +30,13 @@ var navbar = document.getElementById("navbar");
   }
   prevScrollpos = currentScrollPos;
 }
+
+//Show and hide hamburger menu
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
