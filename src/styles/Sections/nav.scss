@@ -24,15 +24,20 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
     max-width: 1140px;
     display: flex;
     justify-content: space-between;
+    min-height: 70px;
+    align-items: center;
+  
     .logo {
       width: auto; //Set one of the propeties to auto and the other to 100% to preserve ratio
       height: 70px ;
       align-self: flex-start;
     }
-    .nav-list {
+    .nav-menu {
       display: flex;
       margin-right: 2rem;
-
+      
+      //justify-content: space-between;     
+      //gap: 60px;
       a.current {
         background:  map-get($map: $defaultTheme, $key:"secondary" ); //rgb a =  0.822
       }
@@ -41,6 +46,7 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
         display: block;
         font-size: 2.2rem;
         padding: 2rem;
+        transition: 0.5s ease;
       }
        a:hover {
         background: map-get($map: $defaultTheme, $key:"secondary" );
@@ -48,52 +54,13 @@ Below is a starting navigation bar formatted for mobile and desktop. MQ is set t
     }
   }
 }
-header{
-  background-color: #262626;
-}
 
-li{
-  list-style: none;
-}
 
-a{
-  color: white;
-  text-decoration: none;
-}
-
-.navbar{
-  min-height: 70px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 24px;
-}
-
-.nav-menu{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-}
-
-.nav-branding{
-  font-size: 2rem;
-}
-
-.nav-link{
-  transition: 0.7s ease;
-}
-
-.nav-link:hover{
-  color: dodgerblue;
-}
 
 .hamburger{
   display: none;
   cursor: pointer;
-}
-
-.bar{
+  .bar{
   display: block;
   width: 25px;
   height: 3px;
@@ -102,6 +69,9 @@ a{
   transition: all 0.3s ease;
   background-color: white;
 }
+}
+
+
 
   /*@media (max-width: 600px){
     .nav-container{
@@ -142,6 +112,12 @@ a{
   
 
   @media(max-width:768px){
+    .nav-container{
+      background-color: black;
+      .nav{
+        justify-content: space-around;
+      }
+    }
     .hamburger{
       display: block;
     }
@@ -162,7 +138,7 @@ a{
       top: 70px;
       gap: 0;
       flex-direction: column;
-      background-color: #262626;
+      background-color: black;
       width: 100%;
       text-align: center;
       transition: 0.3s;

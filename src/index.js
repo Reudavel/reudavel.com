@@ -21,7 +21,7 @@ window.addEventListener("scroll", event => {
 window.onscroll = function() {
 var currentScrollPos = window.pageYOffset;
 var navbar = document.getElementById("navbar");
-  if ( currentScrollPos > 300) {
+  if ( currentScrollPos > 300  || navbar.offsetWidth <= 768) {
    navbar.style.backgroundColor = "black";
    navbar.style.backgroundColor = "0 2px 0 rgba(0, 0, 0, 0.4)";
   } else {
@@ -31,6 +31,7 @@ var navbar = document.getElementById("navbar");
   prevScrollpos = currentScrollPos;
 }
 
+//Hamburger menu
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
